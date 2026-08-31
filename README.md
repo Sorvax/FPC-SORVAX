@@ -32,11 +32,11 @@ FPC-SORVAX solves this by establishing **three independent trust boundaries**:
 | Adapter-based investigation engine | ✅ Implemented |
 | OpenAI real AI integration (Responses API) | ✅ Implemented |
 | MockAI fallback when OpenAI is unavailable | ✅ Implemented |
-| AI audit trail & input fingerprinting | ✅ Implemented |
-| Case transfer with handover summaries | ✅ Implemented |
-| Initial report before remediation | ✅ Implemented |
-| Post-patch final report | ✅ Implemented |
-| Monitoring dashboard | ✅ Implemented |
+| AI audit trail & input fingerprinting | ✅Need to Implement |
+| Case transfer with handover summaries | Planned |
+| Initial report before remediation | PLanned |
+| Post-patch final report |  Planned |
+| Monitoring dashboard | planned |
 | Evidence tamper simulation & detection | ✅ Implemented |
 | File upload with binary SHA-256 hashing | ✅ Implemented |
 | Army simulated environment compatibility | ✅ Designed |
