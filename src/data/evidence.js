@@ -1,0 +1,17 @@
+export const evidenceItems = [
+  { id: 'E-001', caseId: 'CASE-0241', type: 'logs', label: 'Authentication Access Logs', description: 'Server access logs showing authentication attempts', collectedAt: '10:44 AM', verified: true, fingerprint: '7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-002', caseId: 'CASE-0241', type: 'logs', label: 'Application Error Logs', description: 'Application error logs from authentication service', collectedAt: '10:44 AM', verified: true, fingerprint: 'a948904f2f0f479b8f8564e9d39dfb5e9dc0', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-003', caseId: 'CASE-0241', type: 'scan', label: 'Security Scan Result', description: 'Dynamic security scan of authentication endpoint', collectedAt: '10:45 AM', verified: true, fingerprint: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-004', caseId: 'CASE-0241', type: 'system', label: 'System Configuration', description: 'Current system configuration snapshot', collectedAt: '10:44 AM', verified: true, fingerprint: 'd7a8fbb307d7809469ca9abcb0082e4f8d5651e46', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-005', caseId: 'CASE-0241', type: 'code', label: 'Source Code Snapshot', description: 'Authentication module source code', collectedAt: '10:45 AM', verified: true, fingerprint: 'ef2d127de37b942baad06145e54b0c619a1f22327b', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-006', caseId: 'CASE-0241', type: 'network', label: 'Network Traffic Capture', description: 'Packet capture of authentication requests', collectedAt: '10:46 AM', verified: true, fingerprint: '4e07408562bedb8b60ce05c1decfe3ad16b72230967', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-007', caseId: 'CASE-0241', type: 'file', label: 'Suspicious Query Pattern', description: 'Extracted malicious SQL query patterns', collectedAt: '10:46 AM', verified: true, fingerprint: '4b227777d4dd1fc61c6f884f48641d02b4d121d3fd0', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-008', caseId: 'CASE-0241', type: 'system', label: 'Database Access Records', description: 'Database query logs showing executed statements', collectedAt: '10:47 AM', verified: true, fingerprint: 'ef797c8118f02dfb649607dd5d3f8c7623048c9c063', integrityMessage: 'Evidence has not been changed since collection.' },
+  { id: 'E-009', caseId: 'CASE-0242', type: 'network', label: 'Outbound Network Logs', description: 'Firewall logs showing unusual outbound traffic', collectedAt: '09:20 AM', verified: false, fingerprint: 'pending', integrityMessage: 'Verification in progress...' },
+  { id: 'E-010', caseId: 'CASE-0242', type: 'system', label: 'Running Processes List', description: 'Snapshot of active processes on Server 03', collectedAt: '09:21 AM', verified: false, fingerprint: 'pending', integrityMessage: 'Verification in progress...' },
+  { id: 'E-011', caseId: 'CASE-0242', type: 'file', label: 'Modified Binary Hash', description: 'Hash of recently modified executable', collectedAt: '09:22 AM', verified: false, fingerprint: 'pending', integrityMessage: 'Verification in progress...' }
+];
+
+export function getEvidenceForCase(caseId) {
+  return evidenceItems.filter(e => e.caseId === caseId);
+}
